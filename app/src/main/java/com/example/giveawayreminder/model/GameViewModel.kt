@@ -84,11 +84,7 @@ class GameViewModel(application: Application, val gamesRepository: GamesReposito
         }
     }
 
-    /**
-     * Gets Mars photos information from the Mars API Retrofit service and updates the
-     * [MarsPhoto] [List] [MutableList].
-     */
-    fun getPromotionsInfo() {
+    private fun getPromotionsInfo() {
         viewModelScope.launch {
             _uiState.update {currentState ->
                 currentState.copy(

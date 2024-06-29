@@ -12,3 +12,25 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android) apply false
 }
 
+
+//android {
+//    compileSdk = 33
+//
+//    defaultConfig {
+//        applicationId = "com.example.yourapp"
+//        minSdk = 21
+//        targetSdk = 33
+//        versionCode = 1
+//        versionName = "1.0"
+//    }
+//
+//    buildTypes {
+//        getByName("debug") {
+//            isDebuggable = true
+//        }
+//        getByName("release") {
+//            isMinifyEnabled = false
+//            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+//        }
+//    }
+//}
